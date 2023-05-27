@@ -18,6 +18,8 @@ jobs:
 
       - name: Install nightly toolchain
         uses: dtolnay/rust-toolchain@nightly
+        with:
+          targets: wasm32-unknown-unknown
 
       - name: Cache
         uses: Swatinem/rust-cache@v2
