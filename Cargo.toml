@@ -4,14 +4,22 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-gstd = { git = "https://github.com/gear-tech/gear.git", features = ["debug"], rev = "5c685d0" }
+gstd = { git = "https://github.com/gear-tech/gear.git", features = ["debug"], rev = "78dfa07" }
 scale-info = { version = "2", default-features = false }
 parity-scale-codec = { version = "3", default-features = false }
 tmg-io = { path = "io" }
 
 [build-dependencies]
-gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git" , rev = "5c685d0" }
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git" , rev = "78dfa07" }
 tmg-io = { path = "io" }
 
 [dev-dependencies]
-gtest = { git = "https://github.com/gear-tech/gear.git", rev = "5c685d0" }
+gtest = { git = "https://github.com/gear-tech/gear.git", rev = "78dfa07" }
+
+[workspace.dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git", features = ["debug"], rev = "78dfa07" }
+scale-info = { version = "2", default-features = false }
+parity-scale-codec = { version = "3", default-features = false }
+tmg-io = { path = "io" }
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git" , rev = "78dfa07" }
+gtest = { git = "https://github.com/gear-tech/gear.git", rev = "78dfa07" }
