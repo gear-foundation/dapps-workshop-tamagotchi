@@ -21,7 +21,7 @@ jobs:
       GEAR_NODE_PATH: ./gear
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Artifact cache
         uses: Swatinem/rust-cache@v2
