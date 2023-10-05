@@ -13,7 +13,7 @@ impl Metadata for ProgramMetadata {
     type Reply = ();
     type Others = ();
     type Signal = ();
-    type State = Tamagotchi;
+    type State = InOut<(), Tamagotchi>;
 }
 
 #[derive(Encode, Decode, TypeInfo, Debug)]
