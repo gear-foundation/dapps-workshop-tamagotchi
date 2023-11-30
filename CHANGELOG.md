@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2023-11-30
+
+### Changed
+
+- Updated Gear dependencies to tag `v1.0.2`.
+
 ## [0.1.2] - 2023-07-26
 
 ### Changed
@@ -18,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated Gear dependencies to rev `78dfa07`.
 
-[Unreleased]: https://github.com/gear-foundation/dapps-workshop-tamagotchi/compare/0.1.2...HEAD
+[Unreleased]: https://github.com/gear-foundation/dapps-workshop-tamagotchi/compare/0.1.3...HEAD
+[0.1.3]: https://github.com/gear-foundation/dapps-workshop-tamagotchi/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/gear-foundation/dapps-workshop-tamagotchi/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/gear-foundation/dapps-workshop-tamagotchi/compare/ca271c7...0.1.1
