@@ -78,15 +78,12 @@ impl Tamagotchi {
     }
 
     fn tmg_info(&self) {
-        msg::reply(
-            TmgReply::TmgInfo {
-                owner: self.owner,
-                name: self.name.clone(),
-                date_of_birth: self.date_of_birth,
-            },
-            0,
-        )
-        .expect("Error in a reply `TmgEvent::TmgInfo");
+        let reply: Result<TmgReply, Error> = Ok(TmgReply::TmgInfo {
+            owner: self.owner,
+            name: self.name.clone(),
+            date_of_birth: self.date_of_birth,
+        });
+        msg::reply(reply, 0).expect("Error in a reply `TmgEvent::TmgInfo");
     }
 
     fn tmg_is_dead(&self) -> bool {
@@ -121,7 +118,7 @@ extern "C" fn handle() {
 #[no_mangle]
 unsafe extern "C" fn init() {
     // ⚠️ TODO: Change the tamagotchi name
-    // let name = String::from("Best-Tamagotchi");
+     let name = String::from("Best-Tamagotchi");
 
     let current_block = exec::block_timestamp();
 
@@ -154,4 +151,11 @@ pub struct TmgState {
 extern "C" fn state() {
     let tmg = unsafe { TAMAGOTCHI.get_or_insert(Default::default()) };
     msg::reply(tmg, 0).expect("Failed to share state");
+}
+
+#[derive(Encode, Debug, PartialEq, Eq, Decode, TypeInfo)]
+#[codec(crate = gstd::codec)]
+#[scale_info(crate = gstd::scale_info)]
+pub enum Error {
+    TamagotchiHasDied,
 }
