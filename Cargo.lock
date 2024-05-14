@@ -520,7 +520,7 @@ dependencies = [
  "gear-core",
  "gear-pwasm-utils",
  "gear-wasm-instrument",
- "gmeta",
+ "gmeta 1.4.0",
  "log",
  "once_cell",
  "pathdiff",
@@ -570,7 +570,19 @@ source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b1
 dependencies = [
  "blake2-rfc",
  "derive_more",
- "gmeta-codegen",
+ "gmeta-codegen 1.4.0",
+ "hex",
+ "scale-info",
+]
+
+[[package]]
+name = "gmeta"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
+dependencies = [
+ "blake2-rfc",
+ "derive_more",
+ "gmeta-codegen 1.4.1",
  "hex",
  "scale-info",
 ]
@@ -579,6 +591,16 @@ dependencies = [
 name = "gmeta-codegen"
 version = "1.4.0"
 source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.63",
+]
+
+[[package]]
+name = "gmeta-codegen"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1138,7 +1160,7 @@ dependencies = [
 name = "tmg-io"
 version = "0.1.3"
 dependencies = [
- "gmeta",
+ "gmeta 1.4.1",
  "gstd",
  "parity-scale-codec",
  "scale-info",
@@ -1149,7 +1171,7 @@ name = "tmg-state"
 version = "0.1.3"
 dependencies = [
  "gear-wasm-builder",
- "gmeta",
+ "gmeta 1.4.1",
  "gstd",
  "parity-scale-codec",
  "scale-info",
