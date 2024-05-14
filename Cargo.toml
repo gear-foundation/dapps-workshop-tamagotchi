@@ -25,7 +25,7 @@ authors = ["Gear Technologies"]
 license = "MIT"
 
 [workspace.dependencies]
-gstd = { git = "https://github.com/gear-tech/gear", tag = "v1.4.0" }
+gstd = { git = "https://github.com/gear-tech/gear", tag = "v1.4.1" }
 gear-wasm-builder = { git = "https://github.com/gear-tech/gear", tag = "v1.4.0" }
 gmeta = { git = "https://github.com/gear-tech/gear", tag = "v1.4.0" }
 scale-info = { version = "2", default-features = false }

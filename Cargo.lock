@@ -412,20 +412,20 @@ dependencies = [
 
 [[package]]
 name = "galloc"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "gear-dlmalloc",
 ]
 
 [[package]]
 name = "gcore"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
- "gear-core-errors",
+ "gear-core-errors 1.4.1",
  "gear-stack-buffer",
- "gsys",
+ "gsys 1.4.1",
  "parity-scale-codec",
 ]
 
@@ -438,9 +438,9 @@ dependencies = [
  "byteorder",
  "derive_more",
  "enum-iterator",
- "gear-core-errors",
+ "gear-core-errors 1.4.0",
  "gear-wasm-instrument",
- "gsys",
+ "gsys 1.4.0",
  "hashbrown",
  "hex",
  "log",
@@ -456,6 +456,16 @@ dependencies = [
 name = "gear-core-errors"
 version = "1.4.0"
 source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+dependencies = [
+ "derive_more",
+ "enum-iterator",
+ "scale-info",
+]
+
+[[package]]
+name = "gear-core-errors"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "derive_more",
  "enum-iterator",
@@ -488,8 +498,8 @@ dependencies = [
 
 [[package]]
 name = "gear-ss58"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "anyhow",
  "blake2",
@@ -498,8 +508,8 @@ dependencies = [
 
 [[package]]
 name = "gear-stack-buffer"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 
 [[package]]
 name = "gear-wasm"
@@ -587,15 +597,15 @@ dependencies = [
 
 [[package]]
 name = "gstd"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "arrayvec 0.7.4",
  "const_format",
  "futures",
  "galloc",
  "gcore",
- "gear-core-errors",
+ "gear-core-errors 1.4.1",
  "gstd-codegen",
  "hashbrown",
  "hex",
@@ -606,8 +616,8 @@ dependencies = [
 
 [[package]]
 name = "gstd-codegen"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "gear-ss58",
  "hex",
@@ -620,6 +630,11 @@ dependencies = [
 name = "gsys"
 version = "1.4.0"
 source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+
+[[package]]
+name = "gsys"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 
 [[package]]
 name = "gwasm-instrument"
