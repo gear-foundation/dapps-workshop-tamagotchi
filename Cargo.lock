@@ -423,24 +423,24 @@ name = "gcore"
 version = "1.4.0"
 source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
 dependencies = [
- "gear-core-errors",
+ "gear-core-errors 1.4.0",
  "gear-stack-buffer",
- "gsys",
+ "gsys 1.4.0",
  "parity-scale-codec",
 ]
 
 [[package]]
 name = "gear-core"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "blake2-rfc",
  "byteorder",
  "derive_more",
  "enum-iterator",
- "gear-core-errors",
+ "gear-core-errors 1.4.1",
  "gear-wasm-instrument",
- "gsys",
+ "gsys 1.4.1",
  "hashbrown",
  "hex",
  "log",
@@ -456,6 +456,16 @@ dependencies = [
 name = "gear-core-errors"
 version = "1.4.0"
 source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+dependencies = [
+ "derive_more",
+ "enum-iterator",
+ "scale-info",
+]
+
+[[package]]
+name = "gear-core-errors"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "derive_more",
  "enum-iterator",
@@ -509,8 +519,8 @@ checksum = "bbfbfa701dc65e683fcd2fb24f046bcef22634acbdf47ad14724637dc39ad05b"
 
 [[package]]
 name = "gear-wasm-builder"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "anyhow",
  "cargo_metadata",
@@ -520,7 +530,7 @@ dependencies = [
  "gear-core",
  "gear-pwasm-utils",
  "gear-wasm-instrument",
- "gmeta",
+ "gmeta 1.4.1",
  "log",
  "once_cell",
  "pathdiff",
@@ -534,8 +544,8 @@ dependencies = [
 
 [[package]]
 name = "gear-wasm-instrument"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "derive_more",
  "enum-iterator",
@@ -570,7 +580,19 @@ source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b1
 dependencies = [
  "blake2-rfc",
  "derive_more",
- "gmeta-codegen",
+ "gmeta-codegen 1.4.0",
+ "hex",
+ "scale-info",
+]
+
+[[package]]
+name = "gmeta"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
+dependencies = [
+ "blake2-rfc",
+ "derive_more",
+ "gmeta-codegen 1.4.1",
  "hex",
  "scale-info",
 ]
@@ -579,6 +601,16 @@ dependencies = [
 name = "gmeta-codegen"
 version = "1.4.0"
 source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.63",
+]
+
+[[package]]
+name = "gmeta-codegen"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -595,7 +627,7 @@ dependencies = [
  "futures",
  "galloc",
  "gcore",
- "gear-core-errors",
+ "gear-core-errors 1.4.0",
  "gstd-codegen",
  "hashbrown",
  "hex",
@@ -620,6 +652,11 @@ dependencies = [
 name = "gsys"
 version = "1.4.0"
 source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+
+[[package]]
+name = "gsys"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 
 [[package]]
 name = "gwasm-instrument"
@@ -795,8 +832,8 @@ dependencies = [
 
 [[package]]
 name = "numerated"
-version = "1.4.0"
-source = "git+https://github.com/gear-tech/gear?tag=v1.4.0#aaadcdb580e6dcc0913b152bbca2f57c76093059"
+version = "1.4.1"
+source = "git+https://github.com/gear-tech/gear?tag=v1.4.1#5adfb9b2a2ef88b67ac0dc49ec79278c6de0b4f9"
 dependencies = [
  "derive_more",
  "num-traits",
@@ -1138,7 +1175,7 @@ dependencies = [
 name = "tmg-io"
 version = "0.1.3"
 dependencies = [
- "gmeta",
+ "gmeta 1.4.0",
  "gstd",
  "parity-scale-codec",
  "scale-info",
@@ -1149,7 +1186,7 @@ name = "tmg-state"
 version = "0.1.3"
 dependencies = [
  "gear-wasm-builder",
- "gmeta",
+ "gmeta 1.4.0",
  "gstd",
  "parity-scale-codec",
  "scale-info",
