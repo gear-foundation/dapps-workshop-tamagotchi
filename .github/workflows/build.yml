@@ -60,7 +60,7 @@ jobs:
         uses: actions/download-artifact@v3
 
       - name: Delete previous release
-        uses: dev-drprasad/delete-tag-and-release@v1.0.1
+        uses: dev-drprasad/delete-tag-and-release@v1.1
         with:
           tag_name: build
           github_token: ${{ secrets.GITHUB_TOKEN }}
